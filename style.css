@@ -1,0 +1,111 @@
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    margin: 0;
+    padding: 70px 30px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+
+@media only screen and (min-width: 375px) {
+    .card {
+        width: 100%;
+        padding: 50px 60px;
+        box-sizing: border-box;
+    }
+
+    .card:nth-child(1) {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .card:nth-child(3){
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .one {
+        background-color: hsl(31, 77%, 52%);
+        color: hsl(31, 77%, 52%);
+    }
+
+    .two {
+        background-color: hsl(184, 100%, 22%);
+        color: hsl(184, 100%, 22%);
+    }
+
+    .three {
+        background-color: hsl(179, 100%, 13%);
+        color: hsl(179, 100%, 13%);
+    }
+
+    .card-title h2 {
+        position: relative;
+        font-family: 'Big Shoulders Display', cursive;
+        color: hsl(0, 0%, 95%);
+        margin: 20px 0;
+    }
+
+    .card-body {
+        position: relative;
+        line-height: 200%;
+        color: hsla(0, 0%, 100%, 0.75);
+        text-align: left;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 700px;
+    }
+
+    .card-button {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .btn-learnmore {
+        position: relative;
+        text-decoration: none;
+        background-color: hsl(0, 0%, 95%);
+        padding: 10px 25px;
+        border-radius: 30px;
+        font: 15px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+        display: flex;
+    }
+
+    .wrapper-flex {
+        display: flex;
+        margin: auto;
+    }
+
+    .card {
+        width: 300px;   
+    }
+
+
+    .card:nth-child(1) {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .card:nth-child(3){
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+}    
